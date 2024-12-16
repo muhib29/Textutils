@@ -1,15 +1,15 @@
-//import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
 import Alert from './Component/Alert';
 import Navbar from './Component/Navbar';
-// import About from './component/About';
+// import About from './Component/About';
 import Textforms from './Component/Textforms';
 import React, {useState} from 'react';
-// import {
-//    BrowserRouter as Router,
-//    Switch,
-//    Route,
-//  } from "react-router-dom";
+import {
+   BrowserRouter as Router,
+   Switch,
+   Route,
+ } from "react-router-dom";
 
 function App() {
    const[mode, setMode] = useState('light');
@@ -98,11 +98,11 @@ const togglemode =(cls) => {
 
  <Textforms  showAlert={showAlert} heading="Try TextUtils - Word Counter, Character Counter, Remove Extra Spaces"  
    mode={mode} togglemode={togglemode}  />
- {/* <Router>
-<Navbar   title="Textutils" about="about"  mode={mode} togglemode={togglemode}   
+ {/* <Router> */}
+{/* <Navbar   title="Textutils" about="about"  mode={mode} togglemode={togglemode}   
   />
-<Alert alert ={alert}/>
-<div className="container my-3" >
+<Alert alert ={alert}/> */}
+{/* <div className="container my-3" >
 <Switch>
    <Route exact path="/about">
    <About   mode={mode}/>
